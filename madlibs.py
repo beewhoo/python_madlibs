@@ -1,27 +1,38 @@
-"""
-This program generates passages that are generated in mad-lib format
-Author: Katherin
-"""
 
-# The template for the story
+"""This program will create a user-operated mad-libs! Enjoy!."""
 
-STORY = "This morning _ woke up feeling _. 'It is going to be a _ day!' Outside, a bunch of _s were protesting to keep _ in stores. They began to _ to the rhythm of the _, which made all the _s very _. Concerned, _ texted _, who flew _ to _ and dropped _ in a puddle of frozen _. _ woke up in the year _, in a world where _s ruled the world."
 
-print 'Mad Libs has started.'
+print "Mad Libs has started"
+name = raw_input("Enter your name: ")
 
-name = raw_input("Enter a name: ")
+print 'Three adjectives please!'
+adjective_a = raw_input("First adjective: ")
+adjective_b = raw_input("Second adjective: ")
+adjective_c = raw_input("Third adjective: ")
 
-print 'You need to input 3 adjectives, one verb and two nouns!'
+print 'Three verbs please!'
+verb_a = raw_input("First verb: ")
+verb_b = raw_input("Second verb: ")
+verb_c = raw_input("Third verb: ")
 
-adjective1 = raw_input("Enter first adjective: ")
-adjective2 = raw_input("Enter second adjective: ")
-adjective3 = raw_input("Enter third adjective: ")
+print 'Four nouns please!'
+noun_a = raw_input("First noun: ")
+noun_b = raw_input("Second noun: ")
+noun_c = raw_input("Third noun: ")
+noun_d = raw_input("Fourth noun: ")
 
-print 'Now one verb!'
+print 'Enter the following please!'
 
-verb =  raw_input("Enter Verb: ")
+animal = raw_input("Enter an animal: ")
+food = raw_input("Enter a food: ")
+fruit = raw_input("Enter a fruit: ")
+number = raw_input("Enter a number: ")
+superhero_name = raw_input("Enter a superhero name: ")
+country = raw_input("Enter a country: ")
+dessert = raw_input("Enter a dessert: ")
+year = raw_input("Enter a year: ")
 
-print 'Now two nouns!'
+#The template for the story
+STORY = "This morning I woke up and felt %s because %s was going to finally %s over the big %s %s. On the other side of the %s were many %ss protesting to keep %s in stores. The crowd began to %s to the rhythm of the %s, which made all of the %ss very %s. %s tried to %s into the sewers and found %s rats. Needing help, %s quickly called %s. %s appeared and saved %s by flying to %s and dropping %s into a puddle of %s. %s then fell asleep and woke up in the year %s, in a world where %ss ruled the world."
 
-noun1 = raw_input("Enter first noun: ")
-noun1 = raw_input("Enter second noun: ")
+print STORY % (adjective_a, name, verb_a, adjective_b, noun_a, noun_b, animal, food, verb_b, noun_c, fruit, adjective_c, name, verb_c, number, name, superhero_name, superhero_name, name, country, name, dessert, name, year, noun_d)
